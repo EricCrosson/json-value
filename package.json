@@ -1,6 +1,6 @@
 {
     "name": "@ericcrosson/json-value",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Extract values from json from the CLI",
     "main": "dist/src/json-value.js",
     "types": "dist/src/json-value.d.ts",
