@@ -5,20 +5,12 @@
 ## Install
 
 ```shell
-npm install @ericcrosson/json-value
+npm install --global @ericcrosson/json-value
 ```
 
 ## Use
 
-```typescript
-import { jsonValue } from '@ericcrosson/json-value'
-// TODO: describe usage
 ```
-
-## Related
-
-TODO
-
-## Acknowledgments
-
-TODO
+Usage:
+    jsv <file> <keys>...
+```
