@@ -2,6 +2,8 @@
  * core.ts
  */
 
+/* eslint-disable @typescript-eslint/promise-function-async */
+
 namespace debug {
     export const io = require('debug')('jsv:io')
 }
@@ -17,8 +19,10 @@ export function readFile(file: string): Either<Error, JSON> {
     return Either.encase(() => require(file))
 }
 
-export function prop(data: JSON) {
-    return function accessProperty(key: string) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function prop(data: JSON): (key: string) => any {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return function accessProperty(key: string): any {
         debug.io(`Accessing property '${key}'`)
         return data[key]
     }
