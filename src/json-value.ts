@@ -21,6 +21,8 @@ interface UserOptions {
 
 
 const docstring = `
+JSON value -- extract values from JSON file
+
 Usage:
     jsv <file> <keys>...
 `
